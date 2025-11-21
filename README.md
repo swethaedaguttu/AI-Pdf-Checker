@@ -55,10 +55,8 @@ npm run preview
 ```
 
 ## Deployment
-
-- **Backend (Render/Railway)** – follow the official guide for deploying Node/Express apps: https://render.com/docs/deploy-node-express-app
-- **Frontend (Vercel)** – deploy the Vite frontend by following Vercel’s Vite instructions: https://vercel.com/docs/frameworks/vite
-- **Environment variables** – copy `backend/env.example` and `frontend/env.example`, fill in your keys, and configure the same values in the respective hosting dashboards.
+- **Frontend** (Vercel): https://ai-pdf-checker-77qh.vercel.app/
+- **Backend** (Render): https://ai-pdf-checker.onrender.com
 
 ## Usage
 
