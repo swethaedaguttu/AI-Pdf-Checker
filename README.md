@@ -54,6 +54,26 @@ npm run build
 npm run preview
 ```
 
+## Deployment
+
+### Backend (Render/Railway/etc.)
+1. Create a new **Web Service** pointing to this repo.
+2. Set the **root directory** to `backend`.
+3. Build command: `npm install` &nbsp;|&nbsp; Start command: `npm start`.
+4. Configure environment variables:
+   - `LLM_PROVIDER=groq`
+   - `GROQ_API_KEY`, `GROQ_MODEL=openai/gpt-oss-20b`, `GROQ_BASE_URL=https://api.groq.com/openai/v1`
+   - Optional `MISTRAL_*` or `OPENAI_*` keys if you want backup providers
+5. Deploy and note the backend URL (e.g. `https://ai-pdf-checker-api.onrender.com`).
+
+### Frontend (Vercel)
+1. Import the repo and set the **root directory** to `frontend`.
+2. Build command: `npm run build` &nbsp;|&nbsp; Output directory: `dist`.
+3. Environment variables:
+   - `VITE_API_URL=https://your-backend.example.com`
+   - `VITE_API_PROXY=https://your-backend.example.com`
+4. Redeploy; the UI will call the hosted backend automatically.
+
 ## Usage
 
 1. Start backend and frontend per above.
