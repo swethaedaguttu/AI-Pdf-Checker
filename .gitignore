@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+*.env.example
+
+# Build outputs
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.pid
+*.swp
+*.swo
+*~
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test files
+sample.pdf
+test-*.pdf
+*.test.pdf
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
